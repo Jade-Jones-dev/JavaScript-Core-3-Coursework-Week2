@@ -23,5 +23,18 @@ addEl.addEventListener('click', (e) => {
     listEl.append(img)
 
     // add fetch next
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) =>{
+        if (data.status == 'success'){
+            img.setAttribute('src', data.message)
+        }
+        else throw Error
+    })
+
 })
+
+delEl.addEventListener('click', (e) => {let removeEl = document.querySelector
+('.image')
+removeEl.remove()})
 

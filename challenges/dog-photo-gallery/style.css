@@ -1,0 +1,16 @@
+img{
+    height:300px;
+    width:400px;
+    margin: auto auto 40px auto;
+
+}
+
+.dog-images{
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+    background-color: pink;
+    padding-left:150px;
+    margin:auto;
+}
